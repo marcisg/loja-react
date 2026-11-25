@@ -6,19 +6,17 @@
     padding: 10px;
 }
 
-.navbar-logo {
-    text-decoration: none;
-    font-family: var(--fonte-marca);
-    font-size: 32px;
-    color: var(--branco);
-}
-
 .navbar-centro {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 8px;
     flex: 1;
 }
+
+/*=============================================*/
+/*                  BUSCA                      */
+/*=============================================*/
 
 .navbar-busca {
     display: flex;
@@ -26,4 +24,88 @@
     border-radius: 999px;
     width: 100%;
     max-width: 400px;
+}
+
+.navbar-busca:focus-within {
+    outline: 2px solid var(--branco);
+}
+
+.navbar-busca > input {
+    border: none;
+    background-color: transparent;
+    flex: 1;
+    padding: 8px 16px;
+}
+
+.navbar-busca > input:focus {
+    outline: none;
+}
+
+.navbar-busca > button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font: inherit;
+    padding: 0 10px;
+}
+
+/*=============================================*/
+/*                 CATEGORIAS                  */
+/*=============================================*/
+
+.navbar-categorias {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-categorias a {
+    color: var(--branco);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--fonte-marca);
+    font-size: 0.75rem;
+}
+
+.navbar-categorias a:hover {
+    color: var(--rosa-claro);
+}
+
+/*=============================================*/
+/*                  SLOGAN                     */
+/*=============================================*/
+
+.navbar-logo {
+    text-decoration: none;
+    font-family: var(--fonte-marca);
+    font-size: 2rem;
+    color: var(--branco);
+}
+
+.navbar-logo p {
+    margin: 0;
+}
+
+.navbar-slogan {
+    font-size: 0.75rem;
+}
+
+/*=============================================*/
+/*                  ICONES                     */
+/*=============================================*/
+
+.navbar-icones {
+    display: flex;
+    gap: 16px;
+}
+
+.navbar-icones a {
+    color: var(--rosa-claro);
+    font-size: 1.5rem;
+}
+
+.navbar-icones a:hover {
+    color: var(--branco);
 }

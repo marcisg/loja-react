@@ -1,14 +1,21 @@
 import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart, faCartShopping } from '@fortawesome/free-solid-svg-icons'
+import { faUser } from '@fortawesome/free-regular-svg-icons'
 import './Navbar.css'
 
 export function Navbar() {
     return (
         <header className="navbar">
-            <Link to="/" className="navbar-logo">Vibe Store</Link>
+            <Link to="/" className="navbar-logo">
+                <p>Vibe Store</p>
+                <p className="navbar-slogan">Seu estilo, todos os dias</p>
+            </Link>
+
 
             <div className="navbar-centro">
                 <form className="navbar-busca">
-                    <input type="search" placeholder="Buscar produtos" />
+                    <input type="search" placeholder="Buscar produtos"/>
                     <button type="submit">Buscar</button>
                 </form>
 
@@ -23,9 +30,15 @@ export function Navbar() {
             </div>
 
             <div className="navbar-icones">
-                <Link to="/favoritos">Favoritos</Link>
-                <Link to="/login">Conta</Link>
-                <Link to="/carrinho">Carrinho</Link>
+                <Link to="/favoritos" aria-label="Favoritos">
+                    <FontAwesomeIcon icon={faHeart} />
+                </Link>
+                <Link to="/login" aria-label="Conta">
+                    <FontAwesomeIcon icon={faUser} />
+                </Link>
+                <Link to="/carrinho" aria-label="Carrinho">
+                    <FontAwesomeIcon icon={faCartShopping} />
+                </Link>
             </div>
         </header>
     )
