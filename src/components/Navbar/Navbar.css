@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--vinho-claro);
+    padding: 10px;
+}
+
+.navbar-logo {
+    text-decoration: none;
+    font-family: var(--fonte-marca);
+    font-size: 32px;
+    color: var(--branco);
+}
+
+.navbar-centro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.navbar-busca {
+    display: flex;
+    background-color: var(--rosa-claro);
+    border-radius: 999px;
+    width: 100%;
+    max-width: 400px;
+}

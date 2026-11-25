@@ -2,7 +2,7 @@ import './CartPage.css'
 
 function CartPage(){
     return(
-       <h1>Carinho</h1> 
+       <h1>Carrinho</h1> 
     )
 }
 
