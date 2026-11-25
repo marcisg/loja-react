@@ -1,0 +1,94 @@
+/*=============================================*/
+/*                  FOOTER                     */
+/*=============================================*/
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px;
+    padding: 32px 40px;
+    background-color: var(--vinho);
+    color: var(--branco);
+}
+
+.footer p {
+    margin: 0;
+}
+
+/*=============================================*/
+/*                  MARCA                      */
+/*=============================================*/
+
+.footer-marca {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footer-nome {
+    font-family: var(--fonte-marca);
+    font-size: 1.5rem;
+}
+
+.footer-slogan {
+    font-size: 0.875rem;
+    color: var(--rosa-claro);
+}
+
+/*=============================================*/
+/*                 COLUNAS                     */
+/*=============================================*/
+
+.footer-links, .footer-redes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.footer-titulo {
+    font-family: var(--fonte-marca);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--rosa-claro);
+}
+
+/*=============================================*/
+/*                  LINKS                      */
+/*=============================================*/
+
+.footer-links a {
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.footer-links a:hover {
+    color: var(--rosa-claro);
+}
+
+/*=============================================*/
+/*                REDES SOCIAIS                */
+/*=============================================*/
+
+.footer-redes a {
+    color: var(--branco);
+    font-size: 1.5rem;
+}
+
+.footer-redes a:hover {
+    color: var(--rosa-claro);
+}
+
+/*=============================================*/
+/*                 COPYRIGHT                   */
+/*=============================================*/
+
+.footer-copy {
+    width: 100%;
+    padding-top: 16px;
+    border-top: 1px solid var(--vinho-claro);
+    text-align: center;
+    font-size: 0.75rem;
+}

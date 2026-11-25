@@ -1,0 +1,13 @@
+/*=============================================*/
+/*                  LAYOUT                     */
+/*=============================================*/
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.layout-conteudo {
+    flex: 1;
+}
